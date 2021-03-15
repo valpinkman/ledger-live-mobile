@@ -89,6 +89,7 @@ export default function BaseNavigator() {
         name={NavigatorName.Lending}
         component={LendingNavigator}
         options={{
+          ...stackNavigationConfig,
           headerStyle: styles.headerNoShadow,
           headerLeft: undefined,
           title: t("transfer.lending.title"),
